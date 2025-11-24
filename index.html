@@ -2,51 +2,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Word Masters</title>
+    <header><title>Word Masters</title></header>
     <link rel="stylesheet" href="./wordle.css" />
   </head>
   <body>
-  <header class="head"></header>
-    <div class = "top">
-        <h1 class = "name">Word Masters</h1>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqZBu3t0Zx5aW2b8QgRtmgjyXEqxxsMvzjA&s" 
-        alt="logo"
-        class="title-image">
+  <header class="head" aria-label="Game header"></header>
+    <div class = "top" aria-label="game title section">
+        <h1 class = "name" aria-label="Word masters game title">Word Masters</h1>
+        <img src="data:image/jpeg;base64,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" 
+        alt="question mark image icon"
+        class="title-image"
+        aria-label="question mark icon">
     </div>
     <div class = "loading">
-        <div class = "spiral">🌀</div>
+        <!-- <div class = "spiral">🌀</div> -->
     </div>
-    <div id = "board">
-            <div class="cell" id="0"></div>
-            <div class="cell" id="1"></div>
-            <div class="cell" id="2"></div>
-            <div class="cell" id="3"></div>
-            <div class="cell" id="4"></div>
-            <div class="cell" id="5"></div>
-            <div class="cell" id="6"></div>
-            <div class="cell" id="7"></div>
-            <div class="cell" id="8"></div>
-            <div class="cell" id="9"></div>
-            <div class="cell" id="10"></div>
-            <div class="cell" id="11"></div>
-            <div class="cell" id="12"></div>
-            <div class="cell" id="13"></div>
-            <div class="cell" id="14"></div>
-            <div class="cell" id="15"></div>
-            <div class="cell" id="16"></div>
-            <div class="cell" id="17"></div>
-            <div class="cell" id="18"></div>
-            <div class="cell" id="19"></div>
-            <div class="cell" id="20"></div>
-            <div class="cell" id="21"></div>
-            <div class="cell" id="22"></div>
-            <div class="cell" id="23"></div>
-            <div class="cell" id="24"></div>
-            <div class="cell" id="25"></div>
-            <div class="cell" id="26"></div>
-            <div class="cell" id="27"></div>
-            <div class="cell" id="28"></div>
-            <div class="cell" id="29"></div>
+    <div id = "board" role= "grid" aria-label="game guessing board">
+            <div class="cell" id="0" role = "gridcell" aria-rowindex="1" aria-colindex="1" aria-label="row 1 letter 1"></div>
+            <div class="cell" id="1" role = "gridcell" aria-rowindex="1" aria-colindex="2" aria-label="row 1 letter 2"></div>
+            <div class="cell" id="2" role = "gridcell" aria-rowindex="1" aria-colindex="3" aria-label="row 1 letter 3"></div>
+            <div class="cell" id="3" role = "gridcell" aria-rowindex="1" aria-colindex="4" aria-label="row 1 letter 4"></div>
+            <div class="cell" id="4" role = "gridcell" aria-rowindex="1" aria-colindex="5" aria-label="row 1 letter 5"></div>
+            <div class="cell" id="5" role = "gridcell" aria-rowindex="2" aria-colindex="1" aria-label="row 2 letter 1"></div>
+            <div class="cell" id="6" role = "gridcell" aria-rowindex="2" aria-colindex="2" aria-label="row 2 letter 2"></div>
+            <div class="cell" id="7" role = "gridcell" aria-rowindex="2" aria-colindex="3" aria-label="row 2 letter 3"></div>
+            <div class="cell" id="8" role = "gridcell" aria-rowindex="2" aria-colindex="4" aria-label="row 2 letter 4"></div>
+            <div class="cell" id="9" role = "gridcell" aria-rowindex="2" aria-colindex="5" aria-label="row 2 letter 5"></div>
+            <div class="cell" id="10" role = "gridcell" aria-rowindex="3" aria-colindex="1" aria-label="row 3 letter 1"></div>
+            <div class="cell" id="11" role = "gridcell" aria-rowindex="3" aria-colindex="2" aria-label="row 3 letter 2"></div>
+            <div class="cell" id="12" role = "gridcell" aria-rowindex="3" aria-colindex="3" aria-label="row 3 letter 3"></div>
+            <div class="cell" id="13" role = "gridcell" aria-rowindex="3" aria-colindex="4" aria-label="row 3 letter 4"></div>
+            <div class="cell" id="14" role = "gridcell" aria-rowindex="3" aria-colindex="5" aria-label="row 3 letter 5"></div>
+            <div class="cell" id="15" role = "gridcell" aria-rowindex="4" aria-colindex="1" aria-label="row 4 letter 1"></div>
+            <div class="cell" id="16" role = "gridcell" aria-rowindex="4" aria-colindex="2" aria-label="row 4 letter 2"></div>
+            <div class="cell" id="17" role = "gridcell" aria-rowindex="4" aria-colindex="3" aria-label="row 4 letter 3"></div>
+            <div class="cell" id="18" role = "gridcell" aria-rowindex="4" aria-colindex="4" aria-label="row 4 letter 4"></div>
+            <div class="cell" id="19" role = "gridcell" aria-rowindex="4" aria-colindex="5" aria-label="row 4 letter 5"></div>
+            <div class="cell" id="20" role = "gridcell" aria-rowindex="5" aria-colindex="1" aria-label="row 5 letter 1"></div>
+            <div class="cell" id="21" role = "gridcell" aria-rowindex="5" aria-colindex="2" aria-label="row 5 letter 2"></div>
+            <div class="cell" id="22" role = "gridcell" aria-rowindex="5" aria-colindex="3" aria-label="row 5 letter 3"></div>
+            <div class="cell" id="23" role = "gridcell" aria-rowindex="5" aria-colindex="4" aria-label="row 5 letter 4"></div>
+            <div class="cell" id="24" role = "gridcell" aria-rowindex="5" aria-colindex="5" aria-label="row 5 letter 5"></div>
+            <div class="cell" id="25" role = "gridcell" aria-rowindex="6" aria-colindex="1" aria-label="row 6 letter 1"></div>
+            <div class="cell" id="26" role = "gridcell" aria-rowindex="6" aria-colindex="2" aria-label="row 6 letter 2"></div>
+            <div class="cell" id="27" role = "gridcell" aria-rowindex="6" aria-colindex="3" aria-label="row 6 letter 3"></div>
+            <div class="cell" id="28" role = "gridcell" aria-rowindex="6" aria-colindex="4" aria-label="row 6 letter 4"></div>
+            <div class="cell" id="29" role = "gridcell" aria-rowindex="6" aria-colindex="5" aria-label="row 6 letter 5"></div>
     </div>
     <script src="./wordle.js"></script>
   </body>
